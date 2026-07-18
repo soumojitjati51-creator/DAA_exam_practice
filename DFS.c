@@ -21,7 +21,7 @@ void DFS(int n, int start){
         int u=pop();
         if(visited[u]==0){
             visited[u]=1;
-            printf("%d\t",u);
+            printf("%d\t_",u);
             for(int i=0;i<n;i++){
                 if(graph[u][i]==1 && visited[i]==0){
                     push(i);
